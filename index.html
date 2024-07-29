@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
 <body>
 
@@ -17,10 +18,11 @@
             <div class="right">
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a id="home-btn">Home</a></li>
+                    <li><a id="about-btn">About</a></li>
+                    <li><a id="projects-btn">Projects</a></li>
+                    <li><a id="education-btn">Education</a></li>
+                    <li><a id="contact-btn">Contact</a></li>
                 </ul>
 
             </div>
@@ -28,38 +30,54 @@
     </header>
 
     <main>
-        <div class="firstSection">
+        <div id="firstSection">
             <div class="leftSection">
                 <h1>Hey,<br>My name is <span class="darshan">DARSHAN</span></h1>
                 <h1>I am Currently<br>learning <span class="learning"></span></h1>
             </div>
             <div class="rightSection">
-                <img src="aa.png" height="500px" width="700px">
+                <img src="astronaut.png" height="500px" width="700px">
             </div>
         </div>
 <hr class="hr1">
-        <div class="secondSection">
-            <p>SKILLS<p>
+        <div id="secondSection">
+            <div class="skills-h1"><h1>SKILLS<h1></div>
             <div class="skills">
-                <img src="html.png" class="html" height="100px" width="100px">
-                <img src="css.png" class="css" height="100px" width="100px">
-                <img src="js.png" class="js" height="100px" width="100px">
-                <img src="java.png" class="java" height="100px" width="100px">
+                <!-- <div class="languages"></div>
+                <div class="Web"></div>
+                <div class="Other"></div> -->
+                <div class="skills-container">
+                    <div class="planet html">HTML</div>
+                    <div class="planet css">CSS</div>
+                    <div class="planet js">JavaScript</div>
+                    <div class="planet java">Java</div>
+                    <div class="planet react">React</div>
+                    <div class="planet node">Node.js</div>
+                    <div class="planet sql">SQL</div>
+                    <div class="planet git">GitHub</div>
+                    <div class="planet docker">Docker</div>
+                    <div class="planet c-plus">C++</div>
+                </div>
             </div>
         </div>
-<hr>
-        <div class="thirdSection">
-            <h1>PROJECTS</h1>
+<!-- <hr> -->
+        <div id="thirdSection">
+            <div class="projects-h1"><h1>PROJECTS</h1></div>
             <div class="projects">
-                <img src="file1.png" class="project1" height="100px" width="100px">
-                <button>EXPLORE</button>
-                <img src="file1.png" class="project2" height="100px" width="100px">
-                <button>EXPLORE</button>
+               <div class="project1">
+                <img src='project-stake.jpg'>
+                    <div class="overlay">
+                        <h2>STAKE CLONE</h2>
+                        <P>It is a clone of Popular Gambling Website Stake, In this clone you can Decide when a player will WIN or LOSE</P>
+                        <a href="https://darshhh04.github.io/STAKE-CLONE/" target="_blank"><button>Visit<i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 5px;"></i></button></a>
+                    </div>
+                </div>
+                <div class="project2"></div>
             </div>
         </div>
-<hr>
-        <div class="fourthSection">
-            <h1>EDUCATION</h1>
+<!-- <hr> -->
+        <div id="fourthSection">
+            <div class="education-h1"><h1>EDUCATION</h1></div>
             <div class="education">
                 <div class="timeline">
                     <div class="subTimeline">
@@ -88,50 +106,29 @@
                 </div>
             </div>
         </div>
-<hr>
-        <div class="fifthSection">
-            <h1>CONTACT</h1>
+<!-- <hr> -->
+        <div id="fifthSection">
+            <div class="contact-h1"><h1>CONTACT</h1></div>
             <div class="contact">
-        
-        <div class="contact-form">
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        
-        <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-        </div>
-        
-        <div class="social-media">
-            <h3>Follow Us</h3>
-            <ul class="social-icons">
-                <li><a href="https://facebook.com/example" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
-                <li><a href="https://linkedin.com/company/example" target="_blank">LinkedIn</a></li>
-                <li><a href="https://instagram.com/example" target="_blank">Instagram</a></li>
-            </ul>
-        </div>
-
+                <div class="email-contact" style="width: 360px;">
+                    <p style="font-weight: bolder; font-size: larger;">EMAIL</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=darshanbhatarkar04@gmail.com" style="text-decoration: none; color: white;" target="_blank"><P>darshanbhatarkar04@gmail.com<i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 5px;"></i></P></a>
+                </div>
+                <div class="github-contact">
+                    <p style="font-weight: bolder; font-size: larger;">GITHUB</p>
+                    <a href="https://github.com/darshhh04" style="text-decoration: none; color: white;" target="_blank"><P>Click to Visit<i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 5px;"></i></P></a>
+                </div>
+                <div class="linkedin-contact">
+                    <p style="font-weight: bolder; font-size: larger;">LINKEDIN</p>
+                    <a href="https://www.linkedin.com/in/darshan-bhatarkar-320ab3314/" style="text-decoration: none; color: white;" target="_blank"><p>Click to Visit Profile<i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 5px;"></i></p></a>
+                </div>
             </div>
         </div>
-<hr>        
+<!-- <hr>         -->
     </main>
 
 
+                            <!-- JAVASCRIPT -->
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -142,6 +139,38 @@
     backSpeed: 100,
     loop: true
     })
+
+
+    document.getElementById('home-btn').addEventListener('click', function() {
+    document.querySelector('#firstSection').scrollIntoView({
+        behavior: 'smooth', 
+    });
+});
+
+document.getElementById('about-btn').addEventListener('click', function() {
+    document.querySelector('#secondSection').scrollIntoView({
+        behavior: 'smooth' 
+    });
+});
+
+document.getElementById('projects-btn').addEventListener('click', function() {
+    document.querySelector('#thirdSection').scrollIntoView({
+        behavior: 'smooth'  
+    });
+});
+
+document.getElementById('education-btn').addEventListener('click', function() {
+    document.querySelector('#fourthSection').scrollIntoView({
+        behavior: 'smooth'  
+    });
+});
+
+document.getElementById('contact-btn').addEventListener('click', function() {
+    document.querySelector('#fifthSection').scrollIntoView({
+        behavior: 'smooth'  
+    });
+});
+
     </script>
 
 </body>

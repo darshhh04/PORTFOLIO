@@ -7,6 +7,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
+    background: url('stars.jpg');
     font-family: "Poppins", sans-serif;
     color: white;
 }
@@ -19,6 +20,7 @@ nav{
     height: 64px;
     position: fixed;
     width: 1536px;
+    
 }
 
 nav ul{
@@ -28,24 +30,37 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    margin: 0 15px; 
+    padding: 5 25px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
 }
 
 nav ul li:hover{
+    border-radius: 20px;
+    padding: 5px 25px;
     background-color: black;
+}
+
+nav ul li:active{
+    border-radius: 20px;
+    padding: 5px 25px;
+    background-color: white;
+    color: black;
 }
 
 nav ul li a{
     text-decoration: none;
-    color: white;
 }
+
 
 .left{
     font-size: 2rem;
     color: white;
+    cursor: pointer;
 }
 
-.firstSection{
+#firstSection{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -93,51 +108,163 @@ nav ul li a{
 }
 
 .hr1{
-    border: 1px solid white;
+    border: 1px solid black;
     margin-top: 693px;
+}
+
+#secondSection{
+    height: 109vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url('stars.jpg');
 }
 
 .skills{
     display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
-    align-items: center;
+    justify-content: space-between;
 }
+
+.languages, .web, .other{
+    border: 2px white solid;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+#thirdSection{
+    height: 109vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project1{
+    margin: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.overlay{
+    background: linear-gradient(transparent, #ffffff00, #ffffff64, #00ff11b3);
+    transition: opacity 0.2s ease-in-out;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0%;
+}
+
+.overlay:hover{
+    opacity: 100%;
+}
+
+.overlay h2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transform: translateY(400px);
+    color: #000;
+}
+
+.overlay p{
+    padding: 10px;
+    transform: translateY(390px);
+    color: #000;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.overlay button{
+    padding: 10px 155px;
+    background-color: white;
+    border-radius: 20px;
+    transform: translateX(18px) translateY(395px);
+    border: none;
+}
+
+.overlay button:hover{
+    background-color: black;
+    color: white;
+}
+
+.project2{
+    margin: 50px;
+    cursor: pointer;
+}
+
 
 .projects{
     display: flex;
     justify-content: space-evenly;
-    height: 100vh;
     align-items: center;
+    margin: 50px;
+}
+
+.projects div{
+    width: 400px;
+    height: 600px;
+    border: 2px white solid;
+    border-radius: 10px;
+}
+
+#fourthSection{
+    height: 109vh;
 }
 
 .education{
     display: flex;
-    height: 100vh;
+}
+
+#fifthSection{
+    height: 109vh;
 }
 
 .contact{
     display: flex;
-    height: 100vh;
 }
 
-.secondSection p{
-    font-size: 20rem;
-    display: flex;
-    justify-content: center;
-    transform: translateY(110px);
+.skills-h1{
+    display: inline-block; 
+    transform: rotate(90deg); 
+    transform-origin: left top;
+    position: absolute;
+    font-size: 4rem;
+    left: 200px; 
+    top: 875px; 
 }
 
-.thirdSection h1{
-    display: flex;
-    justify-content: center;
-    transform: translateY(110px);
+.projects-h1{
+    display: inline-block; 
+    transform: rotate(90deg); 
+    transform-origin: left top;
+    position: absolute;
+    font-size: 3.7rem;
+    right: -570px; 
+    top: 219vh;
 }
 
-.fourthSection h1{
-    display: flex;
-    justify-content: center;
-    transform: translateY(110px);
+.education-h1{
+    display: inline-block; 
+    transform: rotate(90deg); 
+    transform-origin: left top;
+    position: absolute;
+    font-size: 3.1rem;
+    left: 200px;
+    top: 330vh;
+}
+
+.contact-h1{
+    display: inline-block; 
+    transform: rotate(90deg); 
+    transform-origin: left top;
+    position: absolute;
+    font-size: 3.7rem;
+    right: -590px;
+    top: 437vh;
 }
 
 .timeline{
@@ -196,40 +323,203 @@ nav ul li a{
 
 /* contact */
 .contact {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+        transform: translateY(280px);
+        padding-right: 100px;
+ }
+
+ .contact p{
+    padding: 35px;
+ }
+
+ .email-contact, .github-contact, .linkedin-contact{
+    width: 350px;
+    height: 200px;
+    border: 2px white solid;
+    border-radius: 20px;
+ }
         
-        .contact-form, .contact-info, .social-media {
-            width: 100%;
-            max-width: 600px;
-            margin-bottom: 20px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        form label, form input, form textarea {
-            margin-bottom: 10px;
-        }
-        
-        .social-icons {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-        }
-        .social-icons li {
-            margin: 0 10px;
-        }
-        .social-icons a {
-            text-decoration: none;
-        }
 
 /* contact */
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.planet {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 1.5em #ccc;
+    transition: transform 0.5s linear;
+}
+
+.html {
+    width: 100px;
+    height: 100px;
+    background: url('html.png');
+    background-size : 200% 100%;
+    transform: translateY(-40px) translateX(180px);
+}
+
+.css {
+    width: 130px;
+    height: 130px;
+    background: url('css.png');
+    background-size : 200% 100%;
+    transform: translateY(250px) translateX(70px);
+}
+
+.js {
+    width: 150px;
+    height: 150px;
+    background: url("javascript.png");
+    background-size : 200% 100%;
+    color: #000;
+    transform: translateY(-200px) translateX(100px);
+}
+
+.java {
+    width: 200px;
+    height: 200px;
+    color: black;
+    background: url("java.jpg");
+    background-size : 200% 100%;
+    transform: translateY(50px) translateX(-30px);
+}
+
+.react {
+    width: 95px;
+    height: 95px;
+    background: url("images.jpg");
+    background-size : 200% 100%;
+    color: #000;
+    transform: translateY(-100px);
+}
+
+.node {
+    width: 120px;
+    height: 120px;
+    background: url("images.jpg");
+    background-size : 200% 100%;
+    transform: translateY(200px);
+}
+
+.sql {
+    width: 70px;
+    height: 70px;
+    background: url("images.jpg");
+    background-size : 200% 100%;
+    transform: translateY(-100px);
+}
+
+.git {
+    width: 95px;
+    height: 95px;
+    background: url("git.jpeg");
+    background-size : 200% 100%;
+    transform: translateY(100px);
+}
+
+.docker {
+    width: 170px;
+    height: 170px;
+    background: url("images.jpg");
+    background-size : 200% 100%;
+    transform: translateY(-100px) translateX(100px);
+}
+
+.c-plus {
+    width: 160px;
+    height: 160px;
+    background: url("c++.png");
+    background-size : 200% 100%;
+    transform: translateY(200px);
+}
+
+.html, .css, .js, .java, .react, .node, .sql, .git, .docker, .c-plus{
+    
+    background-repeat: repeat;
+    animation: rotate 5s linear infinite, float 5s linear infinite;
+    
+}
+
+@keyframes rotate {
+    to{background-position: -200% 0%;}
+}
+
+/* all planets hover individual */
+
+.html:hover {
+    transform: translateY(-40px) translateX(180px) scale(1.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 4em #ccc;
+}
+
+.css:hover {
+    transform: translateY(250px) translateX(70px) scale(1.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 4em #ccc;
+}
+
+.js:hover {
+    transform: translateY(-200px) translateX(100px) scale(1.7);
+    transition: transform 0.8s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 4em #ccc;
+}
+
+.java:hover {
+    transform: translateY(50px) translateX(-30px) scale(1.8);
+    transition: transform 1s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em em #ccc;
+}
+
+.react:hover {
+    transform: translateY(-100px) scale(1.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 4em #ccc;
+}
+
+.node:hover {
+    transform: translateY(200px) scale(1.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 4em #ccc;
+}
+
+.sql:hover {
+    transform:  translateY(-100px) scale(1.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 4em #ccc;
+}
+
+.git:hover {
+    transform: translateY(100px) scale(1.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 4em #ccc;
+}
+
+.docker:hover {
+    transform: translateY(-100px) translateX(100px) scale(1.7);
+    transition: transform 0.9s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 2.5em #ccc;
+}
+
+.c-plus:hover {
+    transform: translateY(200px) scale(1.6);
+    transition: transform 0.8s ease, box-shadow 0.3s ease;
+    box-shadow: inset -2em -2em 2em #000, -0.1em -0.1em 3em #ccc;
+}
+
+
+/* all planets hover individual */
