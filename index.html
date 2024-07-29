@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="left">MyPortfolio</div>
+            <div class="right">
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="firstSection">
+            <div class="leftSection">
+                <h1>Hey,<br>My name is <span class="darshan">DARSHAN</span></h1>
+                <h1>I am Currently<br>learning <span class="learning"></span></h1>
+            </div>
+            <div class="rightSection">
+                <img src="aa.png" height="500px" width="700px">
+            </div>
+        </div>
+<hr class="hr1">
+        <div class="secondSection">
+            <p>SKILLS<p>
+            <div class="skills">
+                <img src="html.png" class="html" height="100px" width="100px">
+                <img src="css.png" class="css" height="100px" width="100px">
+                <img src="js.png" class="js" height="100px" width="100px">
+                <img src="java.png" class="java" height="100px" width="100px">
+            </div>
+        </div>
+<hr>
+        <div class="thirdSection">
+            <h1>PROJECTS</h1>
+            <div class="projects">
+                <img src="file1.png" class="project1" height="100px" width="100px">
+                <button>EXPLORE</button>
+                <img src="file1.png" class="project2" height="100px" width="100px">
+                <button>EXPLORE</button>
+            </div>
+        </div>
+<hr>
+        <div class="fourthSection">
+            <h1>EDUCATION</h1>
+            <div class="education">
+                <div class="timeline">
+                    <div class="subTimeline">
+                        <div class="line1"></div>
+                        <pre class="school">
+                                (20XX-20XX)
+                        ST. Francis T.S.K High School
+                            Chandrapur, Maharashtra
+                               10th Standard
+                        </pre>
+                        <div class="line2"></div>
+                        <pre class="jrcollege">        
+                            (20XX-20XX)
+                        Sardar Patel College
+                       Chandrapur, Maharashtra
+                         11th-12th Standard
+                        </pre>
+                        <div class="line3"></div>
+                        <pre class="srcollege">                        
+                                              (20XX-20XX)
+                                   Rajiv Gandhi College of Engineering
+                                        Chandrapur, Maharashtra
+                        Bachelor of Technology in Computer Science and Engineering
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+<hr>
+        <div class="fifthSection">
+            <h1>CONTACT</h1>
+            <div class="contact">
+        
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+        
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://facebook.com/example" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
+                <li><a href="https://linkedin.com/company/example" target="_blank">LinkedIn</a></li>
+                <li><a href="https://instagram.com/example" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+
+            </div>
+        </div>
+<hr>        
+    </main>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".learning",{
+    strings : ["DEVELOPEMENT","PROGRAMMING", "DESIGNING"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+    })
+    </script>
+
+</body>
+</html>
