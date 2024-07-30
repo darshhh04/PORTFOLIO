@@ -8,6 +8,7 @@ body {
     height: 100%;
     background-color: black;
     background: url('stars.jpg');
+    background: url('stars.jpg');
     font-family: "Poppins", sans-serif;
     color: white;
 }
@@ -20,6 +21,7 @@ nav{
     height: 64px;
     position: fixed;
     width: 1536px;
+    
     
 }
 
@@ -34,12 +36,25 @@ nav ul li{
     box-sizing: border-box;
     cursor: pointer;
     color: white;
+    padding: 5 25px; 
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
 }
 
 nav ul li:hover{
     border-radius: 20px;
     padding: 5px 25px;
+    border-radius: 20px;
+    padding: 5px 25px;
     background-color: black;
+}
+
+nav ul li:active{
+    border-radius: 20px;
+    padding: 5px 25px;
+    background-color: white;
+    color: black;
 }
 
 nav ul li:active{
@@ -57,12 +72,15 @@ nav ul li a{
     display: none;
 }
 
+
 .left{
     font-size: 2rem;
     color: white;
     cursor: pointer;
+    cursor: pointer;
 }
 
+#firstSection{
 #firstSection{
     display: flex;
     align-items: center;
@@ -111,6 +129,7 @@ nav ul li a{
 }
 
 .hr1{
+    border: 1px solid black;
     border: 1px solid black;
     margin-top: 693px;
 }
