@@ -1,0 +1,208 @@
+@media  screen and (max-width : 480px) {
+    body{
+    width: 480px;
+    overflow: hidden;
+}
+
+    .hamburger{
+        display: block;transform: translateX(120px);
+        font-size: 30px;
+        color: white;
+
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        width: 480px;
+    }
+
+    nav ul{
+        display: none;
+    }
+    
+    .leftSection{
+        width: 500px;
+        font-size: 1rem;
+        padding-left: 50px;
+    }
+
+    .rightSection{
+   
+        transform: translate(150px, 400px) rotate(-20deg);
+        position: absolute;
+        animation: bounce 7s infinite ease-in-out; 
+        
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translate(150px, 350px) rotate(-20deg) translateY(0);
+        }
+        50% {
+            transform: translate(150px, 350px) rotate(-20deg) translateX(30px) translateY(-20px);
+        }
+        70% {
+            transform: translate(150px, 350px) rotate(-20deg) translateX(-5px) translateY(-20px);
+        }
+        100% {
+            transform: translate(150px, 350px) rotate(-20deg) translateY(0);
+        }
+    }
+    
+
+    .darshan{
+        font-size: 2.5rem;
+    }
+    
+    .learning{
+        font-size: 2.5rem;
+    }
+
+    #secondSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills{
+        font-size: 1.5rem;
+    }
+
+    .skills-h1{
+        font-size: 2.5rem;
+        top: 115vh;
+        transform: translateX(-65px) rotate(0deg); 
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    
+.html {
+    width: 100px;
+    height: 100px;
+    margin-right: -180px;
+}
+
+.css {
+    width: 130px;
+    height: 130px;
+    transform: translateX(0px);
+
+}
+
+.js {
+    width: 150px;
+    height: 150px;
+    transform:  translateX(0px);
+
+}
+
+.java {
+    width: 200px;
+    height: 200px;
+    transform: translateX(0px);
+}
+
+.react {
+    width: 95px;
+    height: 95px;
+    transform: translateX(0px);
+
+}
+
+.node {
+    width: 120px;
+    height: 120px;
+    transform: translateX(0px);
+
+}
+
+.sql {
+    width: 70px;
+    height: 70px;
+    transform: translateX(0px);
+
+}
+
+.git {
+    width: 95px;
+    height: 95px;
+    transform: translateX(0px);
+
+}
+
+.docker {
+    width: 170px;
+    height: 170px;
+    transform: translateX(0px);
+
+}
+
+.c-plus {
+    width: 160px;
+    height: 160px;
+    transform: translateX(0px);
+
+}
+
+    .projects{
+        margin: 15px;
+    }
+
+    .projects div{
+        width: 200px;
+        height: 300px;
+    }
+
+    .project1{
+        margin: 15px;
+    }
+    
+    .project2{
+        margin: 15px;
+    }
+
+    .projects-h1{
+        font-size: 2rem;
+        top: 225vh;
+        transform: translateX(-635px) rotate(0deg);
+    }
+
+    .education-h1{
+        font-size: 1.7rem;
+        transform: translateX(-105px) rotate(0deg); 
+        top: 336vh;
+    }
+
+    .timeline{
+        display: none;
+    }
+
+    .contact-h1{
+        font-size: 2rem;
+        transform: translateX(-665px) rotate(0deg); 
+        top: 445vh;
+    }
+
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(150px);
+        padding-right: 0;
+    }
+
+    .contact p{
+        padding: 25px;
+     }
+
+    .email-contact, .github-contact, .linkedin-contact{
+        width: 300px;
+        height: 150px;
+        margin-bottom: 10px;
+     }
+}
