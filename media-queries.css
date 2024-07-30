@@ -1,11 +1,10 @@
 @media  screen and (max-width : 480px) {
     body{
     width: 480px;
-    overflow: hidden;
 }
 
     .hamburger{
-        display: block;transform: translateX(120px);
+        display: block;transform: translateX(0px);
         font-size: 30px;
         color: white;
 
@@ -14,39 +13,49 @@
     nav{
         display: flex;
         justify-content: center;
-        width: 480px;
+        width: 500px;
     }
 
     nav ul{
         display: none;
     }
+
+    #firstSection{
+        overflow: hidden;
+    }
     
     .leftSection{
         width: 500px;
         font-size: 1rem;
-        padding-left: 50px;
+        margin-top: 300px;
+        text-align: center;
     }
 
     .rightSection{
-   
-        transform: translate(150px, 400px) rotate(-20deg);
-        position: absolute;
-        animation: bounce 7s infinite ease-in-out; 
         
+        position: absolute;
+        animation: bounce 7s infinite ease-in-out;
+        width: 60%;
+    }
+
+    .astronaut-img{
+        width: 100%;
+        height: 100%;
+       transform: scale(1.3);
     }
     
     @keyframes bounce {
         0% {
-            transform: translate(150px, 350px) rotate(-20deg) translateY(0);
+            transform: translate(5px, 280px) rotate(-20deg) translateY(0);
         }
         50% {
-            transform: translate(150px, 350px) rotate(-20deg) translateX(30px) translateY(-20px);
+            transform: translate(5px, 280px) rotate(-20deg) translateX(30px) translateY(-20px);
         }
         70% {
-            transform: translate(150px, 350px) rotate(-20deg) translateX(-5px) translateY(-20px);
+            transform: translate(5px, 280px) rotate(-20deg) translateX(-5px) translateY(-20px);
         }
         100% {
-            transform: translate(150px, 350px) rotate(-20deg) translateY(0);
+            transform: translate(5px, 280px) rotate(-20deg) translateY(0);
         }
     }
     
